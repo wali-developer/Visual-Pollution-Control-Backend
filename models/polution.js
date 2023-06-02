@@ -1,4 +1,3 @@
-const { Double } = require("mongodb");
 const mongoose = require("mongoose");
 
 const polutionModel = mongoose.Schema({
@@ -7,11 +6,11 @@ const polutionModel = mongoose.Schema({
     required: true,
   },
   latitude: {
-    type: Number,
+    type: String,
     required: false,
   },
   longitude: {
-    type: Number,
+    type: String,
     required: false,
   },
 });
