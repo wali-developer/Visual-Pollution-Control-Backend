@@ -7,11 +7,11 @@ const polutionModel = mongoose.Schema({
     required: true,
   },
   latitude: {
-    type: Double,
+    type: Number,
     required: false,
   },
   longitude: {
-    type: Double,
+    type: Number,
     required: false,
   },
 });
