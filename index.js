@@ -7,7 +7,11 @@ const corsOptions = require("./config/corsOptions");
 const authRouter = require("./routes/auth");
 const coordsRouter = require("./routes/coords");
 const PORT = process.env.PORT || 5000;
-app.use(cors(corsOptions));
+app.use(cors(
+  {
+    origin: "*",
+  }
+));
 app.use(express.json());
 
 app.get("", (req, res) => {
